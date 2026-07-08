@@ -73,8 +73,375 @@ footer {
 /* Selector 7: Styling the Inline Main Image */
 .main-image {
     display: block;
-    max-width: 100%; /* Prevents the image from being wider than its container */
-    height: auto;    /* Keeps the image aspect ratio perfectly proportional */
-    margin: 1.5rem auto 0 auto; /* Centers the image and adds space above it */
-    border-radius: 4px; /* Optional: gives the image soft, clean corners */
+    max-width: 100%; 
+    height: auto;    
+    margin: 1.5rem auto 0 auto; 
+    border-radius: 4px;
+}
+
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --border-color: #cbd5e1;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contact-container {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+p {
+    color: #64748b;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Radio Button Styling */
+.radio-group {
+    display: flex;
+    gap: 15px;
+    padding: 5px 0;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary-color);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Container to orchestrate the 3-column layout */
+.page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px; 
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+/* Style and sizing for the side images */
+.side-image {
+    width: 500px; /* Width of your side images */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Smooth corners to match the form */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.contact-page-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Responsive design: Hide images on smaller screens (mobile/tablets) so the form stays readable */
+@media (max-width: 900px) {
+    .page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px; 
+    box-sizing: border-box;
+    flex-grow: 1;
+    }
+    .side-image {
+        display: none; /* Keeps the layout clean on mobile devices */
+    }
+}
+
+/* Layout container for the accomplishments page content */
+.accomplishments-layout {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.content-box {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('accomplishments.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-box h2 {
+    color: #ffd700; /* Gold */
+    font-size: 30px;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 15px;
+    
+}
+
+.table-description {
+    background-color: rgba(255, 255, 255, 0.75); /* Clean white protective overlay */
+    color: #334155; /* Slate dark text color for high contrast */
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin: 0 auto 25px auto; /* Centers the paragraph and adds space below it */
+    max-width: 90%; /* Keeps the text paragraph neatly bounded */
+    text-align: center; /* Matches your newly centered gold header */
+    font-size: 14px;
+    line-height: 1.6;
+    border: 1px solid rgba(203, 213, 225, 0.5); /* Subtle crisp border */
+}
+
+
+/* ==================== Data Table Styles ==================== */
+.data-table {
+    width: 100%;
+    border-collapse: collapse; /* Prevents double borders between cells */
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Header styling */
+.data-table thead tr {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Zebra striping for readability */
+.data-table tbody tr:nth-of-type(even) {
+    background-color: #f8fafc;
+}
+
+/* Subtle hover effect for data rows */
+.data-table tbody tr:hover {
+    background-color: #f1f5f9;
+    transition: background-color 0.2s ease;
+}
+
+/* Make table rows slightly transparent so the background image shows through */
+.data-table tbody tr:nth-of-type(even) {
+    background-color: rgba(248, 250, 252, 0.85); /* Slightly different shade for alternating rows */
+}
+
+.data-table tbody tr {
+    background-color: rgba(255, 255, 255, 0.7); /* The white gradient/overlay layer is now always ON */
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Layout container for the history page content */
+.history-layout {
+    max-width: 900px; /* Bounds the video section neatly */
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Container block mirroring the design of your content boxes */
+.video-container {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url('history.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Centered heading styling matching your clean page titles */
+.video-container h2 {
+    color: var(--text-color);
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Modern responsive styling for the HTML5 video element */
+.history-video {
+    width: 100%;
+    max-width: 800px; /* Keeps the player crisp and perfectly sized */
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background-color: #000000; /* Dark canvas color while video loads */
+}
+
+/* Subtle background overlay style for the description block directly under the video */
+.video-description {
+    background-color: rgba(248, 250, 252, 0.75); /* Soft, readable contrast tint */
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 25px; /* Creates explicit separation right below the player */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.video-description p {
+    color: #475569; /* Polished slate color for deep readability */
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left; /* Keeps body paragraph prose clean and professional */
+}
+
+/* Container to group and wrap the new historical timeline blocks */
+.timeline-container {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Creates consistent space between each section box */
+}
+
+/* Base style for each unique history section card */
+.history-section {
+    background-color: var(--card-bg);
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+}
+
+/* Alternating background styles to visually distinguish the sections */
+.timeline-container .history-section:nth-of-type(even) {
+    background-color: rgba(248, 250, 252, 0.9); /* Subtle light gray/blue tint */
+}
+
+.timeline-container .history-section:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.95); /* Crisp off-white tint */
+}
+
+/* Styles for the section headers featuring a gold accent bar */
+.history-section h3 {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    border-left: 4px solid #ffd700; /* Distinctive Gold indicator bar on the left side */
+}
+
+/* Sizing and line height formatting for the content blocks */
+.history-section p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
 }

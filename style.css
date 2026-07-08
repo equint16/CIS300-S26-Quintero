@@ -1,0 +1,80 @@
+/* Selector 1: Global Reset and Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333333;
+}
+
+/* Selector 2: Header Styling */
+header {
+    
+    background-image: linear-gradient(rgba(11, 23, 40, 0.75), rgba(26, 54, 93, 0.75)), url('banner.jpeg');
+    
+    background-size: cover;
+    background-position: center;
+    
+    color: #87c398;
+    text-align: center;
+    padding: 6rem 1rem; 
+}
+
+/* Selector 3: Navigation Bar */
+nav {
+    background-color: #56ae6b;
+    padding: 0.5rem;
+}
+
+/* Selector 4: Navigation Links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #1a365d;
+    border-radius: 4px;
+}
+
+/* Selector 5: Main Content Area */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Selector 6: Footer Styling */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1a365d;
+    color: #ffffff;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Selector 7: Styling the Inline Main Image */
+.main-image {
+    display: block;
+    max-width: 100%; /* Prevents the image from being wider than its container */
+    height: auto;    /* Keeps the image aspect ratio perfectly proportional */
+    margin: 1.5rem auto 0 auto; /* Centers the image and adds space above it */
+    border-radius: 4px; /* Optional: gives the image soft, clean corners */
+}

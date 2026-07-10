@@ -383,7 +383,7 @@ button:hover {
 
 /* Subtle background overlay style for the description block directly under the video */
 .video-description {
-    background-color: rgba(248, 250, 252, 0.75); /* Soft, readable contrast tint */
+    background-color: rgba(248, 250, 252, 0.75);
     border: 1px solid var(--border-color);
     border-radius: 6px;
     padding: 20px;
@@ -393,11 +393,11 @@ button:hover {
 }
 
 .video-description p {
-    color: #475569; /* Polished slate color for deep readability */
+    color: #475569;
     font-size: 15px;
     line-height: 1.6;
     margin: 0;
-    text-align: left; /* Keeps body paragraph prose clean and professional */
+    text-align: left;
 }
 
 /* Container to group and wrap the new historical timeline blocks */
@@ -406,7 +406,7 @@ button:hover {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Creates consistent space between each section box */
+    gap: 25px; 
 }
 
 /* Base style for each unique history section card */
@@ -419,7 +419,7 @@ button:hover {
     box-sizing: border-box;
 }
 
-/* Alternating background styles to visually distinguish the sections */
+
 .timeline-container .history-section:nth-of-type(even) {
     background-color: rgba(248, 250, 252, 0.9); /* Subtle light gray/blue tint */
 }
@@ -435,7 +435,7 @@ button:hover {
     margin-top: 0;
     margin-bottom: 12px;
     padding-left: 12px;
-    border-left: 4px solid #ffd700; /* Distinctive Gold indicator bar on the left side */
+    border-left: 4px solid #ffd700;
 }
 
 /* Sizing and line height formatting for the content blocks */

@@ -250,7 +250,7 @@ button:hover {
 }
 
 /* Layout container for the accomplishments page content */
-.accomplishments-layout {
+.activities-layout {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
@@ -259,7 +259,7 @@ button:hover {
 }
 
 .content-box {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('accomplishments.jpeg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('activities.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -200,7 +200,7 @@ button:hover {
     background-color: var(--primary-hover);
 }
 
-/* Container to orchestrate the 3-column layout */
+/* Container with 3-column layout */
 .page-wrapper {
     display: flex;
     align-items: center;
@@ -216,7 +216,7 @@ button:hover {
 
 /* Style and sizing for the side images */
 .side-image {
-    width: 500px; /* Width of your side images */
+    width: 500px; /* Width of side images */
     height: auto;
     object-fit: cover;
     border-radius: 8px; /* Smooth corners to match the form */
@@ -249,7 +249,7 @@ button:hover {
     }
 }
 
-/* Layout container for the accomplishments page content */
+/* Layout container for the activities page content */
 .activities-layout {
     max-width: 1000px;
     width: 100%;
@@ -285,15 +285,15 @@ button:hover {
     padding: 15px 20px;
     border-radius: 6px;
     margin: 0 auto 25px auto; /* Centers the paragraph and adds space below it */
-    max-width: 90%; /* Keeps the text paragraph neatly bounded */
-    text-align: center; /* Matches your newly centered gold header */
+    max-width: 90%; /* Keeps the text paragraph bounded */
+    text-align: center; /* Matches centered gold header */
     font-size: 14px;
     line-height: 1.6;
-    border: 1px solid rgba(203, 213, 225, 0.5); /* Subtle crisp border */
+    border: 1px solid rgba(203, 213, 225, 0.5); /* Subtle  border */
 }
 
 
-/* ==================== Data Table Styles ==================== */
+/*  Data Table Styles  */
 .data-table {
     width: 100%;
     border-collapse: collapse; /* Prevents double borders between cells */
@@ -326,19 +326,19 @@ button:hover {
     transition: background-color 0.2s ease;
 }
 
-/* Make table rows slightly transparent so the background image shows through */
+/* Made table rows slightly transparent so the background image shows through */
 .data-table tbody tr:nth-of-type(even) {
     background-color: rgba(248, 250, 252, 0.85); /* Slightly different shade for alternating rows */
 }
 
 .data-table tbody tr {
-    background-color: rgba(255, 255, 255, 0.7); /* The white gradient/overlay layer is now always ON */
+    background-color: rgba(255, 255, 255, 0.7); 
     border-bottom: 1px solid var(--border-color);
 }
 
 /* Layout container for the history page content */
 .history-layout {
-    max-width: 900px; /* Bounds the video section neatly */
+    max-width: 900px; /* Bounds the video section */
     width: 100%;
     margin: 0 auto;
     padding: 40px 20px;
@@ -371,10 +371,10 @@ button:hover {
     text-align: center;
 }
 
-/* Modern responsive styling for the HTML5 video element */
+
 .history-video {
     width: 100%;
-    max-width: 800px; /* Keeps the player crisp and perfectly sized */
+    max-width: 800px; /* Keeps the player correct size */
     height: auto;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
